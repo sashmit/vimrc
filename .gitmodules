@@ -100,3 +100,6 @@
 [submodule "bundle/gundo"]
 	path = bundle/gundo
 	url = http://github.com/sjl/gundo.vim.git
+[submodule "bundle/zenburn"]
+	path = bundle/zenburn
+	url = https://github.com/vim-scripts/Zenburn.git

@@ -36,14 +36,13 @@ syntax on		" syntax highlight
 set hlsearch		" search highlighting
 
 if has("gui_running")	" GUI color and font settings
-  set guifont=Osaka-Mono:h20
   set background=dark 
   set t_Co=256          " 256 color mode
   set cursorline        " highlight current line
-  colors moria
+  colors zenburn 
 else
 " terminal color settings
-  colors vgod
+  colors zenburn 
 endif
 
 set clipboard=unnamed	" yank to the system register (*) by default
@@ -379,5 +378,6 @@ let NERDTreeMouseMode=2
 " Don't display these kinds of files
 let NERDTreeIgnore=[ '\.pyc$', '\.pyo$', '\.py\$class$', '\.obj$',
             \ '\.o$', '\.so$', '\.egg$', '^\.git$' ]
-
+  
+set t_Co=256          " 256 color mode
 
