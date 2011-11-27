@@ -1,3 +1,7 @@
+" sashmit's vimrc
+" Sashmit Bhaduri <sashmit@gmail.com>
+" 
+" forked from:
 " vgod's vimrc
 " Tsung-Hsiang (Sean) Chang <vgod@vgod.tw>
 " Fork me on GITHUB  https://github.com/vgod/vimrc
@@ -6,6 +10,7 @@
 
 
 " For pathogen.vim: auto load all plugins in .vim/bundle
+filetype off
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
@@ -66,8 +71,8 @@ set tm=500
 
 " TAB setting{
    set expandtab        "replace <TAB> with spaces
-   set softtabstop=3 
-   set shiftwidth=3 
+   set softtabstop=4 
+   set shiftwidth=4 
 
    au FileType Makefile set noexpandtab
 "}      							
@@ -309,5 +314,70 @@ hi link EasyMotionShade  Comment
 nnoremap <silent> <F7> :TagbarToggle<CR> 
 " set focus to TagBar when opening it
 let g:tagbar_autofocus = 1
+
+let g:pydiction_location = $HOME."/.vim/bundle/pydiction/complete-dict"
+
+
+" --- pylint
+"   To disable calling Pylint every
+"   time a buffer is saved put into .vimrc file
+let g:pylint_onwrite = 0
+"   Displaying code rate calculated by Pylint can be avoided by setting
+let g:pylint_show_rate = 0
+"   Openning of QuickFix window can be disabled with
+"       let g:pylint_cwindow = 0
+
+
+
+" Folding
+nnoremap <Space> za
+vnoremap <Space> za
+
+" Strip all trailing whitespace from a file, using ,w
+nnoremap <leader>W :%s/\s\+$//<CR>:let @/=''<CR>
+
+" Run Ack fast
+nnoremap <leader>a :Ack<Space>
+
+" Creating folds for tags in HTML
+"nnoremap <leader>ft Vatzf
+
+" Reselect text that was just pasted with ,v
+nnoremap <leader>v V`]
+
+" Gundo.vim
+nnoremap <F5> :GundoToggle<CR>
+" }}}
+
+" NERDTree settings {{{
+" Put focus to the NERD Tree with F3 (tricked by quickly closing it and
+" immediately showing it again, since there is no :NERDTreeFocus command)
+nmap <leader>n :NERDTreeClose<CR>:NERDTreeToggle<CR>
+nmap <leader>m :NERDTreeClose<CR>:NERDTreeFind<CR>
+nmap <leader>N :NERDTreeClose<CR>
+
+" Store the bookmarks file
+let NERDTreeBookmarksFile=expand("$HOME/.vim/NERDTreeBookmarks")
+
+" Show the bookmarks table on startup
+let NERDTreeShowBookmarks=1
+
+" Show hidden files, too
+let NERDTreeShowFiles=1
+let NERDTreeShowHidden=1
+
+" Quit on opening files from the tree
+let NERDTreeQuitOnOpen=1
+
+" Highlight the selected entry in the tree
+let NERDTreeHighlightCursorline=1
+
+" Use a single click to fold/unfold directories and a double click to open
+" files
+let NERDTreeMouseMode=2
+
+" Don't display these kinds of files
+let NERDTreeIgnore=[ '\.pyc$', '\.pyo$', '\.py\$class$', '\.obj$',
+            \ '\.o$', '\.so$', '\.egg$', '^\.git$' ]
 
 

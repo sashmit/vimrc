@@ -55,3 +55,51 @@
 [submodule "bundle/tagbar"]
 	path = bundle/tagbar
 	url = git://github.com/majutsushi/tagbar
+[submodule "bundle/gf-python"]
+	path = bundle/gf-python
+	url = https://github.com/mkomitee/vim-gf-python.git
+[submodule "bundle/python_ifold"]
+	path = bundle/python_ifold
+	url = https://github.com/vim-scripts/python_ifold.git
+[submodule "bundle/pep8"]
+	path = bundle/pep8
+	url = https://github.com/nvie/vim-pep8.git
+[submodule "bundle/conque"]
+	path = bundle/conque
+	url = https://github.com/rson/vim-conque.git 
+[submodule "bundle/sessionman"]
+	path = bundle/sessionman
+	url = https://github.com/vim-scripts/sessionman.vim.git
+[submodule "bundle/pydoc"]
+	path = bundle/pydoc
+	url = https://github.com/vim-scripts/pydoc.vim.git
+[submodule "bundle/pylint"]
+	path = bundle/pylint
+	url = https://github.com/vim-scripts/pylint.vim.git
+[submodule "bundle/ack"]
+	path = bundle/ack
+	url = git://github.com/mileszs/ack.vim.git
+[submodule "bundle/abolish"]
+	path = bundle/abolish
+	url = git://github.com/nvie/vim-abolish.git
+[submodule "bundle/pyflakes"]
+	path = bundle/pyflakes
+	url = git://github.com/nvie/vim-pyflakes.git
+[submodule "bundle/toggle_mouse"]
+	path = bundle/toggle_mouse
+	url = git://github.com/nvie/vim-togglemouse.git
+[submodule "bundle/pyunit"]
+	path = bundle/pyunit
+	url = git://github.com/nvie/vim-pyunit.git
+[submodule "bundle/rst_tables"]
+	path = bundle/rst_tables
+	url = git://github.com/nvie/vim-rst-tables.git
+[submodule "bundles/snipmate_for_django"]
+	path = bundles/snipmate_for_django
+	url = git://github.com/robhudson/snipmate_for_django.git
+[submodule "bundle/fugitive"]
+	path = bundle/fugitive
+	url = git://github.com/tpope/vim-fugitive.git
+[submodule "bundle/gundo"]
+	path = bundle/gundo
+	url = http://github.com/sjl/gundo.vim.git
