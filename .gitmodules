@@ -1,9 +1,6 @@
 [submodule "bundle/vim-latex"]
 	path = bundle/vim-latex
 	url = git://vim-latex.git.sourceforge.net/gitroot/vim-latex/vim-latex/
-[submodule "bundle/smart-parentheses"]
-	path = bundle/smart-parentheses
-	url = https://github.com/vim-scripts/Smart-Parentheses.git
 [submodule "bundle/autoclose"]
 	path = bundle/autoclose
 	url = https://github.com/Townk/vim-autoclose.git
@@ -66,7 +63,7 @@
 	url = https://github.com/nvie/vim-pep8.git
 [submodule "bundle/conque"]
 	path = bundle/conque
-	url = https://github.com/rson/vim-conque.git 
+	url = https://github.com/rson/vim-conque.git
 [submodule "bundle/sessionman"]
 	path = bundle/sessionman
 	url = https://github.com/vim-scripts/sessionman.vim.git
@@ -94,8 +91,8 @@
 [submodule "bundle/rst_tables"]
 	path = bundle/rst_tables
 	url = git://github.com/nvie/vim-rst-tables.git
-[submodule "bundles/snipmate_for_django"]
-	path = bundles/snipmate_for_django
+[submodule "bundle/snipmate_for_django"]
+	path = bundle/snipmate_for_django
 	url = git://github.com/robhudson/snipmate_for_django.git
 [submodule "bundle/fugitive"]
 	path = bundle/fugitive
